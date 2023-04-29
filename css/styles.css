@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', 'sans-serif';
+}
+nav{
+  background: #FFE6D6;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 65px;
+  line-height: 65px;
+}
+nav .wrapper{
+  position: relative;
+  max-width: 1450px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .logo a{
+  color: #ED5B2D;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 600;
+}
+/* .wrapper .logo{
+  display: flex;
+  justify-content: space-evenly;
+} */
+.wrapper .logo .logoImg img{
+  height: 150px;
+  position: absolute;
+  top: -40px;
+  left: 70px;
+}
+.wrapper .logo .logoName{
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+.wrapper .navLinks{
+  display: inline-flex;
+}
+.navLinks li{
+  list-style: none;
+}
+.navLinks li a{
+  color: #ED5B2D;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.navLinks li a:hover{
+  background:#ecc7ba;
+}
+.navLinks .dropMenu{
+  background: #FFE6D6;
+  width: 180px;
+  top: 85px;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.navLinks li:hover .dropMenu,
+.navLinks li:hover .megaBox{
+  opacity: 1;
+  top: 65px;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.dropMenu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.megaBox{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.megaBox .content{
+  background: #FFE6D6;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.content .row{
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+.content .row header{
+  color:#b9360e;
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .row .megaLinks{
+  margin-left: -40px;
+  border-left: 1px solid rgba(44, 3, 3, 0.09);
+}
+.content .row:nth-child(1),
+.content .row:nth-child(2){
+  border-left: 0px;
+}
+.row .megaLinks li{
+  padding: 0 20px;
+}
+.row .megaLinks li a{
+  padding: 0 20px;
+  color: #96715a;
+  font-size: 17px;
+  display: block;
+}
+.row .megaLinks li a:hover{
+  color: #96715a;
+}
